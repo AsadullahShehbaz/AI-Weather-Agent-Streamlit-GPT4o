@@ -32,7 +32,8 @@ def get_weather(city: str):
 
 available_tools = {
     "get_weather": get_weather,
-    "Get_current_weather": get_weather,  # alias
+    "Get_current_weather": get_weather,
+    "get_current_weather" : get_weather,# alias
     "weather": get_weather,              # alias
 }
 # -------------------
@@ -158,6 +159,7 @@ for role, msg in st.session_state.chat_history:
             """,
             unsafe_allow_html=True,
         )
+
 
 
 
