@@ -9,7 +9,7 @@ from typing import Optional
 # -------------------
 # Load environment
 # -------------------
-load_dotenv()
+
 api_key= st.secrets["GEMINI_API_KEY"]
 
 
@@ -158,6 +158,7 @@ for role, msg in st.session_state.chat_history:
             """,
             unsafe_allow_html=True,
         )
+
 
 
 
