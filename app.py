@@ -1,5 +1,4 @@
 import streamlit as st
-from dotenv import load_dotenv
 from openai import OpenAI
 import os
 import json
@@ -11,7 +10,8 @@ from typing import Optional
 # Load environment
 # -------------------
 load_dotenv()
-api_key = os.getenv("GEMINI_API_KEY")
+api_key= st.secrets["GEMINI_API_KEY"]
+
 
 client = OpenAI(
     api_key=api_key,
@@ -158,5 +158,6 @@ for role, msg in st.session_state.chat_history:
             """,
             unsafe_allow_html=True,
         )
+
 
 
