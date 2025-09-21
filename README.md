@@ -1,7 +1,7 @@
-# 🌦️ AI Weather Agent (Streamlit + GPT-4o via OpenRouter)
+# 🌦️ AI Weather Agent (Streamlit + Gemini)
 
 This is an **AI Weather Assistant** built with **Streamlit** that uses  
-**OpenAI's GPT-4o model via OpenRouter API** to understand user queries,  
+**Gemini model API** to understand user queries,  
 plan reasoning steps, and fetch real-time weather data through external tools.  
 
 🚀 Deployed as a chat-style agent with chain-of-thought reasoning and tool calling.
@@ -9,7 +9,7 @@ plan reasoning steps, and fetch real-time weather data through external tools.
 ---
 
 ## ✨ Features
-- 🤖 Powered by **OpenAI GPT-4o** (via [OpenRouter](https://openrouter.ai/))  
+- 🤖 Powered by **Gemini** (via [Gemini]([Gemini](https://gemini.google.com/app)))  
 - 🌐 Fetches real-time weather using [wttr.in](https://wttr.in) API  
 - 🧠 Uses **chain-of-thought planning**: START → PLAN → TOOL → OBSERVE → OUTPUT  
 - 💬 Interactive **Streamlit chat interface** with conversation history  
@@ -19,8 +19,7 @@ plan reasoning steps, and fetch real-time weather data through external tools.
 
 ## 🛠️ Tech Stack
 - [Streamlit](https://streamlit.io/) – UI & deployment  
-- [OpenRouter](https://openrouter.ai/) – LLM API gateway  
-- [OpenAI GPT-4o](https://platform.openai.com/) – reasoning & tool calling  
+- [GEmini]([https://platform.openai.com/](https://gemini.google.com/app)) – reasoning & tool calling  
 - [Pydantic](https://docs.pydantic.dev/) – structured response parsing  
 - [wttr.in](https://wttr.in) – real-time weather data  
 
